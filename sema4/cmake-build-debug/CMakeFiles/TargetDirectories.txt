@@ -1,0 +1,3 @@
+C:/Noelia/c++/POO2/sema4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Noelia/c++/POO2/sema4/cmake-build-debug/CMakeFiles/sema4.dir
+C:/Noelia/c++/POO2/sema4/cmake-build-debug/CMakeFiles/edit_cache.dir
