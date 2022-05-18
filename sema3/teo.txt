@@ -1,0 +1,45 @@
+1. Programación genérica
+- se lleva en el tiempo de compilación
+- templates
+
+2. Template
+Crear funciones y clases para que puedan ser usados con cualquier tipo de dato
+
+    - Funciones
+    - Clases
+    - Variables
+        T a = valor;
+    - Alias
+        using TYPE = int;
+
+    Necesita una cabecera:
+    template <type Parámetrodeltemplate (T), typename  Parámetrodeltemplate (T2)>
+
+
+FUNCIONES
+- Tipos de parámetros de template se deducen
+
+- Los templates no son totalmente genéricos
+- Variables o datos se calsifican en tipos (int, double, string)
+- Los tipos se clasifican por conceptos. (Teoría de las categorías)
+
+TIPOS DE PARÁMETROS DE TEMPLATE
+    - Parámetros TIPO (typename T)
+    - Parámetros NO-TIPO (similares a los parámetros de la función)
+        -Cálculo de size en arreglos o estructuras estáticas
+        -Cálculos matemáticos en tiempo de compilación
+        -Eleción de tipos en tiempo de compilación
+    - Parámetros TEMPLATE
+        -
+
+
+
+
+CONTENEDORES
+- array
+- basic_string
+- vector
+- list
+- deque
+- map
+- set

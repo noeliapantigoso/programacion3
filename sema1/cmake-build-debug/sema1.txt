@@ -1,0 +1,73 @@
+- template saca provecho al tiempo de compilación
+- hay que sacar ventaja al tiempo de compilación y ejecución
+
+Tipo de datos (nuevos):
+-enum: una forma de enumerar un conjunto limitado de datos de forma acotada
+-class / struct: en class los atributos son públicos,struct es privado por defecto
+-contenedores de librería estándar: string, array, vector, list, set, map, etc.
+-referencias:a la derecha, constante, a la izquierda
+-puntero: principal uso es acceso a memoria dinámica, usando new, es necesario liberar memoria
+-punteros inteligentes:
+-expresiones lambdas:
+
+tipos de polimorfismo: sobrecarga, paramétrico, jerárquico
+herencia o jerárquico, alon, parametrizado o genérico (basado en templates)
+requisitos de polimorfismos por herencia:
+1. Herencia
+2. Virtualización: override en el hijo
+   virtualmente pura: genera clases abstractas
+3. Uso de punteros: sino la clase base no se puede derivar
+
+protegido: tipo de acceso privado que se hace público en la relación padre hijo
+
+sobrecarga de operadores:
+- no se pueden sobrecargar algunos, pero la mayoría sí
+- los tipos también
+- new y delete también
+
+constructores:
+1. Operador por defecto
+2. Operador copia
+    claseA = objetoA
+    claseA objetoB = objetoA
+3. Operador asignación - complemento del constructor copia (sobrecarga de asignación)
+    objetoB = objetoA
+4. Operador move: para evitar construir 2 veces
+    ClaseA fabrica_objetoA(){
+        return ClaseA;
+    }
+5. Operador asignación - complemento del constructor move
+
+Parámetro convertible:
+Clase B{
+    int x;
+public:
+    B(int x) : x(x) {}
+};
+
+B b 10;
+
+Sobrecarga operadores:
+- Funciones
+- Método
+
+C++ solo sobrecarga operadores unarios y binarios
+-Unarios - ++ -- *
+-Binarios a*b, a+= 10
+-Terciarios -> condición lógica ? valor verdadero : valor falso
+
+Relaciones
+- entre clases
+- entre función y clase
+- entre calse y método específico de la clase
+nunca entre funciones
+
+
+Del ejercicio:
+matrix m1(4,5)    constructor por parámetros
+matrix m2=m1      constructor de copia      debe ser uno de copia propio
+                                            para que m1 y m2 no sean iguales
+                  este copia direcciones    porque sino al modificar m2 se
+                  no valores                modifican m1 y m2
+
+
