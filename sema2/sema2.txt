@@ -1,0 +1,15 @@
+OPERADORES
+- UNARIOS
+    -var, var++, ++var, *puntero
+    [operador]operando
+- BINARIOS
+    operando[operador]operando
+-TERCIARIOS
+    operando[operador]operando[operador]operando
+    este no se puede sobrecargar
+
+
+ventaja de a modo de función es que se pueden hacer otras sobrecargas similares
+
+operador ostream siempre debe ser sobrecargado como FUNCION y no como metodo
+ya que el primer operador, no es de la misma clase que el primer operando que recibe esta función que es in string

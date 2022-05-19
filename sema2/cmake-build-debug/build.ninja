@@ -49,8 +49,8 @@ cmake_ninja_workdir = /home/usuario/c++/programacion3/sema2/cmake-build-debug/
 
 build cmake_object_order_depends_target_sema2: phony || CMakeFiles/sema2.dir
 
-build CMakeFiles/sema2.dir/main.cpp.o: CXX_COMPILER__sema2_Debug /home/usuario/c++/programacion3/sema2/main.cpp || cmake_object_order_depends_target_sema2
-  DEP_FILE = CMakeFiles/sema2.dir/main.cpp.o.d
+build CMakeFiles/sema2.dir/sobrecarga_operadores.cpp.o: CXX_COMPILER__sema2_Debug /home/usuario/c++/programacion3/sema2/sobrecarga_operadores.cpp || cmake_object_order_depends_target_sema2
+  DEP_FILE = CMakeFiles/sema2.dir/sobrecarga_operadores.cpp.o.d
   FLAGS = -g -std=gnu++2a
   OBJECT_DIR = CMakeFiles/sema2.dir
   OBJECT_FILE_DIR = CMakeFiles/sema2.dir
@@ -63,7 +63,7 @@ build CMakeFiles/sema2.dir/main.cpp.o: CXX_COMPILER__sema2_Debug /home/usuario/c
 #############################################
 # Link the executable sema2
 
-build sema2: CXX_EXECUTABLE_LINKER__sema2_Debug CMakeFiles/sema2.dir/main.cpp.o
+build sema2: CXX_EXECUTABLE_LINKER__sema2_Debug CMakeFiles/sema2.dir/sobrecarga_operadores.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/sema2.dir
   POST_BUILD = :

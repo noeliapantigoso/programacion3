@@ -7,12 +7,12 @@ Clases crea_objeto(){
 }
 
 int main() {
-    Clases A; //default
-    Clases B; //default
-    Clases C=A; //copia
-    B=C; // asignacion - copia
+    Clases A;           //default
+    Clases B;           //default
+    Clases C=A;         //copia
+    B=C;                //asignacion - copia
 
-    A=crea_objeto(); // para asignar en move primero se crea un objeto, luego se asigna
+    A=crea_objeto();    // para asignar en move primero se crea un objeto, luego se asigna
     Clases D= move(A);
 
     return 0;

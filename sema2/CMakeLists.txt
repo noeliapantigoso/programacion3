@@ -3,4 +3,4 @@ project(sema2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(sema2 main.cpp)
+add_executable(sema2 sobrecarga_operadores.cpp)
