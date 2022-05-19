@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Noelia/c++/POO2/sema1
-BuildDirectory: C:/Noelia/c++/POO2/sema1/cmake-build-debug
+SourceDirectory: /home/usuario/c++/programacion3/sema1
+BuildDirectory: /home/usuario/c++/programacion3/sema1/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Noelia-DESKTOP
+Site: desktop
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-ninja
+BuildName: Linux-c++
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/JetBrains/CLion 2021.3.4/bin/cmake/win/bin/cmake.exe" "C:/Noelia/c++/POO2/sema1"
-MakeCommand: "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/opt/Clion/CLion-2022.1/clion-2022.1/bin/cmake/linux/bin/cmake" "/home/usuario/c++/programacion3/sema1"
+MakeCommand: /opt/Clion/CLion-2022.1/clion-2022.1/bin/cmake/linux/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: C:/MinGW/bin/c++.exe
-CompilerVersion: 6.3.0
+Compiler: /usr/bin/c++
+CompilerVersion: 9.4.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -80,7 +80,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/MinGW/bin/gcov.exe
+CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
 
 # Testing options
